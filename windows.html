@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="windows.css">
+    <title>Windows 11 GUI</title>
+</head>
+<body>
+    <div class="desktop">
+        <div class="desktop-icons settingIcon">
+            <img src="Icons/settingIcon.png" alt="">
+            <p>Setting</p>
+        </div>
+        <div class="desktop-icons msEdgeIcon">
+            <img src="Icons/msedgeIcon.png" alt="">
+            <p>Microsoft Edge</p>
+        </div>
+        <div class="desktop-icons explorerIcon">
+            <img src="Icons/explorerIcon.png" alt="">
+            <p>File</p>
+        </div>
+    </div>
+    
+    <div class="taskbar-container">
+        <div class="center">
+            <img src="Icons/startIcon.png" onclick="showMenu()" alt="">
+            <img src="Icons/explorerIcon.png" alt="">
+            <img src="Icons/msedgeIcon.png" alt="">
+            <img src="Icons/storeIcon.png" alt="">
+            <img src="Icons/vscodeIcon.png" alt="">
+            <img src="Icons/cromeIcon.png" alt="">
+        </div>
+        <div class="right">
+            <div class="clock" id="time" onload="showTime()"></div>
+        </div>
+    </div>
+
+    <div class="start-menu-container" id="start-menu">
+        <div class="search-bar">
+            <input type="text" placeholder="Type here to search">
+        </div>
+        <div class="app-container">
+            <div class="first-heading">
+                <h4>Pinned</h4>
+                <button onclick="showApps()">All Apps</button>
+            </div>
+            <div class="icon-container" id="allApps">
+                <div class="first-icons calender">
+                    <img src="Icons/calender.png" alt="">
+                    <p>calender</p>
+                </div>
+                <div class="first-icons skypeicon">
+                    <img src="Icons/skypeicon.png" alt="">
+                    <p>Skype</p>
+                </div>
+                <div class="first-icons Chrome">
+                    <img src="Icons/cromeIcon.png" alt="">
+                    <p>Chrome</p>
+                </div>
+                <div class="first-icons msoffice">
+                    <img src="Icons/msoffice.png" alt="">
+                    <p>Microsoft Office</p>
+                </div>
+                <div class="first-icons msedgeIcon">
+                    <img src="Icons/msedgeIcon.png" alt="">
+                    <p>Microsoft Edge</p>
+                </div>
+                <div class="first-icons msOnedrive">
+                    <img src="Icons/msOnedrive.png" alt="">
+                    <p>Microsoft Drive</p><br>
+                </div>
+
+                <div class="first-icons explorerIcon">
+                    <img src="Icons/explorerIcon.png" alt="">
+                    <p>Explorer</p>
+                </div>
+                <div class="first-icons spotify">
+                    <img src="Icons/spotify.png" alt="">
+                    <p>Spotify</p><br>
+                </div>
+
+                <div class="first-icons storeIcon">
+                    <img src="Icons/storeIcon.png" alt="">
+                    <p>Store</p>
+                </div>
+                <div class="first-icons mailIcon">
+                    <img src="Icons/mailIcon.png" alt="">
+                    <p>Mail</p>
+                </div>
+                <div class="first-icons itunes">
+                    <img src="Icons/itunes.png" alt="">
+                    <p>Itune</p>
+                </div>
+                <div class="first-icons photoshop">
+                    <img src="Icons/photoshop.webp" alt="">
+                    <p>Photoshop</p>
+                </div>
+                <div class="first-icons nodejsIcon">
+                    <img src="Icons/nodejsIcon.png" alt="">
+                    <p>Node js</p>
+                </div>
+                <div class="first-icons netflix">
+                    <img src="Icons/netflix.png" alt="">
+                    <p>Netflix</p>
+                </div>
+                <div class="first-icons weather">
+                    <img src="Icons/weather.png" alt="">
+                    <p>Weather</p>
+                </div>
+                <div class="first-icons itunes">
+                    <img src="Icons/itunes.png" alt="">
+                    <p>Itune</p>
+                </div>
+                <div class="first-icons pinterest">
+                    <img src="Icons/pinterest.png" alt="">
+                    <p>Pinterest</p>
+                </div>
+                <div class="first-icons powerpoint">
+                    <img src="Icons/powerpoint.png" alt="">
+                    <p>PowerPoint</p>
+                </div>
+                <div class="first-icons vscodeIcon">
+                    <img src="Icons/vscodeIcon.png" alt="">
+                    <p>Vs Code</p>
+                </div>
+                <div class="first-icons opera">
+                    <img src="Icons/opera.png" alt="">
+                    <p>Opera</p>
+                </div>
+            </div>
+        <div class="recommended-apps">
+            <div class="second-heading">
+                <h4>Recommended</h4>
+                <button>More</button>
+            </div>
+            <div class="second-app-container">
+                <div class="first-column">
+                    <div class="second-icons mailIcon">
+                        <img src="Icons/mailIcon.png" alt="">
+                        <p>Nigeria tertiary scholarship scheme <br>2mins ago</p>
+                    </div>
+                    <div class="second-icons gethelp">
+                        <img src="Icons/gethelp.png" alt="">
+                        <p>Get Help</p>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="second-icons powerpoint">
+                        <img src="Icons/powerpoint.png" alt="">
+                        <p>Students final slide project <br>1hour ago</p>
+                    </div>
+                    <div class="second-icons msword">
+                        <img src="Icons/msword.png" alt="">
+                        <p>Latest project <br>2mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shutdown-container">
+            <div class="profile">
+                <img src="Icons/puppy.jpg" alt="">
+                <p>Puppy Cynthia</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script src="windows.js"></script>
+</body>
+</html>
